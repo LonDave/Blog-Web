@@ -15,6 +15,9 @@ const PORT = 3000;
 // Middleware per rendere accessibili i file statici della cartella "public"
 app.use(express.static("public"));
 
+// Middleware per avere bootstrap disponibile
+app.use("/bootstrap", express.static("node_modules/bootstrap/dist"));
+
 // TODO: completare le varie sezioni prima di montare le rotte
 app.use("/home", rotteHome);
 app.use("/blog", rotteBlog);

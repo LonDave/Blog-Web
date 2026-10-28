@@ -1,4 +1,7 @@
 .site-footer {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
 }

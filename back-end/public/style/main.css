@@ -1,4 +1,10 @@
-body{
+body {
     margin: 1rem;
     padding: 1rem;
+}
+
+section.raccoltaHome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
