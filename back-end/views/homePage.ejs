@@ -5,90 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/footer.css">
-    <title>Home page</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <title>Home</title>
 </head>
 
 <body>
     <%- include("partials/header.ejs") %>
 
         <main>
-            <h1>Benvenuto</h1>
-            <section class="p-start">
+            <section id="mainMessage">
+                <h1>Benvenuto</h1>
                 <div>
                     <p>
-                        La homepage mostrera solo alcuni post, per eventuali altri recati nella sezione "Blog".
+                        Elementi in evidenza
                     </p>
                 </div>
             </section>
 
             <section class="raccoltaHome">
-                <section class="card mb-4" style="max-width: 320px">
-                    <img src="/img/jonathan-adams-0dkF_olN0mw-unsplash.jpg"
-                        class="card-img-top ratio-1x1 object-fit-cover" alt="car turning and fog">
+                <section class="card mb-4" style="max-width: 320px; background-color: #102A43; color: #FDF6E2;">
+                    <img src="img/Gemini_Generated_Image_t1m63ht1m63ht1m6.jpg"
+                        class="card-img-top ratio-1x1 object-fit-cover" alt="paesaggio montano con nebbia">
                     <div class="card-body">
-                        <h4 class="card-title">Momento di libertà</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card’s content.</p>
-                        <a href="blog" class="btn-solid theme-secondary">Vai ai blog</a>
+                        <h4 class="card-title">Riflessi Silenziosi</h4>
+                        <p class="card-text">
+                            Un'esplorazione visiva della tranquillità e della vastità della natura incontaminata. Scatta
+                            e condividi il tuo silenzio.
+                        </p>
+                        <a href="blog/ev1" class="btn-solid" style="background-color: #FDF6E2; color: #102A43;">
+                            Vai ai blog
+                        </a>
                     </div>
                 </section>
-                <section class="card mb-4" style="max-width: 320px">
-                    <img src="/img/jonathan-adams-0dkF_olN0mw-unsplash.jpg"
-                        class="card-img-top ratio-1x1 object-fit-cover" alt="car turning and fog">
+                <section class="card mb-4" style="max-width: 320px; background-color: #102A43; color: #FDF6E2;">
+                    <img src="img/Gemini_Generated_Image_t1m63ht1m63ht1m6 (1).jpg"
+                        class="card-img-top ratio-1x1 object-fit-cover"
+                        alt="traffico cittadino notturno a lunga esposizione">
                     <div class="card-body">
-                        <h4 class="card-title">Momento di libertà</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card’s content.</p>
-                        <a href="blog" class="btn-solid theme-secondary">Vai ai blog</a>
+                        <h4 class="card-title">Battiti Urbani</h4>
+                        <p class="card-text">
+                            Cattura l'energia della metropoli: luci, movimento e storie umane che si intrecciano
+                            nell'architettura moderna.
+                        </p>
+                        <a href="blog/ev2" class="btn-solid" style="background-color: #FDF6E2; color: #102A43;">
+                            Vai ai blog
+                        </a>
                     </div>
                 </section>
-                <section class="card mb-4" style="max-width: 320px">
-                    <img src="/img/jonathan-adams-0dkF_olN0mw-unsplash.jpg"
-                        class="card-img-top ratio-1x1 object-fit-cover" alt="car turning and fog">
+                <section class="card mb-4" style="max-width: 320px; background-color: #102A43; color: #FDF6E2;">
+                    <img src="img/Gemini_Generated_Image_t1m63ht1m63ht1m6 (2).jpg"
+                        class="card-img-top ratio-1x1 object-fit-cover" alt="macro di una libellula su un ramo">
                     <div class="card-body">
-                        <h4 class="card-title">Momento di libertà</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card’s content.</p>
-                        <a href="blog" class="btn-solid theme-secondary">Vai ai blog</a>
-                    </div>
-                </section>
-                <section class="card mb-4" style="max-width: 320px">
-                    <img src="/img/jonathan-adams-0dkF_olN0mw-unsplash.jpg"
-                        class="card-img-top ratio-1x1 object-fit-cover" alt="car turning and fog">
-                    <div class="card-body">
-                        <h4 class="card-title">Momento di libertà</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card’s content.</p>
-                        <a href="blog" class="btn-solid theme-secondary">Vai ai blog</a>
-                    </div>
-                </section>
-                <section class="card mb-4" style="max-width: 320px">
-                    <img src="/img/jonathan-adams-0dkF_olN0mw-unsplash.jpg"
-                        class="card-img-top ratio-1x1 object-fit-cover" alt="car turning and fog">
-                    <div class="card-body">
-                        <h4 class="card-title">Momento di libertà</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card’s content.</p>
-                        <a href="blog" class="btn-solid theme-secondary">Vai ai blog</a>
-                    </div>
-                </section>
-                <section class="card mb-4" style="max-width: 320px">
-                    <img src="/img/jonathan-adams-0dkF_olN0mw-unsplash.jpg"
-                        class="card-img-top ratio-1x1 object-fit-cover" alt="car turning and fog">
-                    <div class="card-body">
-                        <h4 class="card-title">Momento di libertà</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card’s content.</p>
-                        <a href="blog" class="btn-solid theme-secondary">Vai ai blog</a>
+                        <h4 class="card-title">I Segreti della Macro</h4>
+                        <p class="card-text">
+                            Scopri un mondo invisibile e meraviglioso. Dettagli minimi che svelano la complessità e la
+                            bellezza della vita più piccola.
+                        </p>
+                        <a href="blog/ev3" class="btn-solid" style="background-color: #FDF6E2; color: #102A43;">
+                            Vai ai blog
+                        </a>
                     </div>
                 </section>
             </section>

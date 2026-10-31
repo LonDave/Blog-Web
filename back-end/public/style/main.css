@@ -1,10 +1,19 @@
-body {
-    margin: 1rem;
-    padding: 1rem;
+:root {
+    scrollbar-gutter: auto;
 }
 
 section.raccoltaHome {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+#mainMessage {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+body {
+    background-color: #FDF6E2;
+    color: #102A43;
 }
