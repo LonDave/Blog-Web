@@ -2,6 +2,8 @@
 import express from "express";
 import { router as rotteHome } from "./routes/home.js";
 import { router as rotteBlog } from "./routes/blog.js";
+import { router as rotteChiSono } from "./routes/chiSono.js";
+import { router as rotteAltri } from "./routes/altri.js";
 
 // Inizializzazione app
 const app = express();
@@ -19,8 +21,10 @@ app.use(express.static("public"));
 app.use("/bootstrap", express.static("node_modules/bootstrap/dist"));
 
 // TODO: completare le varie sezioni prima di montare le rotte
-app.use("/home", rotteHome);
+app.use("/", rotteHome);
 app.use("/blog", rotteBlog);
+app.use("/chiSono", rotteChiSono);
+app.use("/altri", rotteAltri);
 
 // Funzione per avere il fallback in caso di porta standard occupata
 function avviaServer(porta) {
